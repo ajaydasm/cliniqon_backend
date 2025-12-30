@@ -13,8 +13,10 @@ Route::middleware('auth:api')
     ->group(function () {
 
         Route::get('/summary', [DashboardController::class, 'summary']);
-        Route::get('/monthly-earnings', [DashboardController::class, 'monthlyEarnings']);
-
+        Route::get('/accounting-earnings', [DashboardController::class, 'monthlyEarnings']);
+        Route::get('/projects', [DashboardController::class, 'projects']);
+        Route::get('/balance-chart', [DashboardController::class,'getBalanceChartData']);
+        Route::get('/daily-schedule', [DashboardController::class, 'dailySchedule']);
 
 
     });
