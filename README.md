@@ -41,7 +41,7 @@ php artisan key:generate
 
 Update database credentials in .env:
 
-DB_DATABASE=dashboard_db
+DB_DATABASE=cliniqon_backend
 DB_USERNAME=root
 DB_PASSWORD=
 
@@ -52,7 +52,7 @@ All database tables are managed via migrations.
 php artisan migrate
 
 
-(Optional) Seed dummy data:
+Seed dummy data:
 
 php artisan db:seed
 
@@ -212,42 +212,26 @@ Response
 🗄 Database Management
 Tables (Migration Managed)
 
-users
+    users
+    
+    earnings
+    
+    withdrawals
+    
+    projects
+    
+    schedules
 
-earnings
 
-withdrawals
 
-projects
 
-schedules
-
-schedules Table Structure
-id
-user_id
-schedule_date
-time
-title
-description
-type
-created_at
-updated_at
-
-🧪 Dummy Data
-
-To seed schedule dummy data:
-
-php artisan db:seed --class=ScheduleSeeder
 
 🔗 Frontend Integration
 
 Designed to be consumed by:
 
 React + Vite
-
 Axios API hooks
-
 Dashboard UI cards & charts
-
 Right panel daily schedule timeline
 
