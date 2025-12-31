@@ -1,4 +1,4 @@
-# 📊 Dashboard API – Laravel Backend
+# 📊 Cliniqon Dashboard API – Laravel Backend
 
 This project provides a **Dashboard API** built with **Laravel**, supporting:
 - Authentication
